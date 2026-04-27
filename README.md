@@ -10,7 +10,7 @@ This repository compares OLS linear regression results and execution performance
 
 ```
 anscombe-quartet/
-├── main.go              # Go program: OLS regression + timing + memory
+├── main_Statistics.go   # Go program: OLS regression + timing + memory
 ├── regression_test.go   # Go unit tests and benchmarks
 ├── go.mod               # Go module definition
 ├── go.sum               # Go dependency checksums (auto-generated)
@@ -177,12 +177,6 @@ All three languages produce virtually identical OLS coefficients, confirming the
 
 Go benchmark (`go test -bench=. -benchmem`, Apple M4):
 BenchmarkLinearRegression-10: 2,785,522 iterations · 425.6 ns/op · 2,496 B/op · 16 allocs/op
-
-
-```
-BenchmarkLinearRegression-<cores>   <N> iterations   <ns>/op   <bytes>/op   <allocs>/op
-```
-
 ---
 
 ## Recommendation to Management
